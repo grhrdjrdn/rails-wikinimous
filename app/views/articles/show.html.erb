@@ -1,0 +1,14 @@
+<h1><%= @article.title %></h1>
+
+<%= markdown(@article.content) %>
+
+<p>
+  <%= link_to(fa_icon('pencil', text: "Update"), edit_article_path(@article)) %>
+</p>
+
+<p>
+  <%= link_to fa_icon('trash', text: "Delete"),
+    article_path(@article),
+    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+  %>
+</p>

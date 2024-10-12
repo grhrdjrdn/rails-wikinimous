@@ -102,6 +102,10 @@ GEM
     drb (2.2.1)
     error_highlight (0.6.0)
     erubi (1.13.0)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.6)
@@ -197,6 +201,7 @@ GEM
     rake (13.2.1)
     rdoc (6.7.0)
       psych (>= 4.0.0)
+    redcarpet (3.6.0)
     regexp_parser (2.9.2)
     reline (0.5.10)
       io-console (~> 0.5)
@@ -254,10 +259,13 @@ DEPENDENCIES
   capybara
   debug
   error_highlight (>= 0.4.0)
+  faker
+  font-awesome-rails
   importmap-rails
   jbuilder
   puma (>= 5.0)
   rails (~> 7.1.4)
+  redcarpet
   selenium-webdriver
   sprockets-rails
   sqlite3 (>= 1.4)
